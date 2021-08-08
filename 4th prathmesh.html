@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  
+  <script>
+class company
+{
+    constructor(compname,country,owner)
+    {
+        this.compname=compname;
+        this.country=country;
+        this.owner=owner;
+    }
+    getCarname()
+    {
+        return this.compname;
+    }
+}
+
+class car extends company
+{
+    constructor(carname,compname,country,owner,established,group)
+    {
+        super(compname,country,owner);
+        this.established=established;
+        this.carname=carname;
+        this.group=group;
+
+    }
+    getModel()
+    {
+        return this.carname;
+    }
+   
+    
+}
+
+  let Car1=new car('Hero Pleasure',' Hero Honda ','India',' Brijmohan Lall Munjal','1984',' Hero Honda ');
+ console.log(Car1.getModel());
+
+ let Car2=new car('Royal Enfield','Royal Enfield Bullet Company ','India','conglomerate Eicher','1955','Eicher Motors  ');
+ console.log(Car2.getModel());
+
+ let Car3=new car('KTM','KTM Sportmotorcycle AG ','Austria','Hans Trunkenpolz','2016,Volkswagen ');
+ console.log(Car3.getModel());
+
+ let Car4=new car('Ford Aspire','Ford Motor ','US','TLee Iacocca,','1964','Ford ');
+ console.log(Car4.getModel());
+
+let Car5=new car('Porsche 911','Porsche ','Germany','Oliver Blume',' 1964','Volkswagen ');
+ console.log(Car5.getModel());
+
+ let Car6=new car(' Bajaj M80','Bajaj',' India','Flavio Manzoni','1956','Fiat Chrysler ');
+ console.log(Car6.getModel());
+ 
+  </script>
+
+</body>
+</html>
